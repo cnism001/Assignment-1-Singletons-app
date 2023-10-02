@@ -13,7 +13,7 @@ namespace Assignment_1_Singletons_app
     {
         //private static variable for singular instance of class Logger, since there can'be be more
         //than one instance of the  Singleton pattern class 
-        static private Logger Instance;
+        static private Logger GetInstance;
 
         //Private constructor, preventing instantiation from outside of Logger class, creates new Logs list when Instance is
         //first instantiated
@@ -28,11 +28,11 @@ namespace Assignment_1_Singletons_app
         {
 
 
-            if (Instance == null)
+            if (GetInstance == null)
             {
-                Instance = new Logger();
+                GetInstance = new Logger();
             }
-            return Instance;
+            return GetInstance;
 
         }
         // List Logs, storing the logged messages, set to private to prevent changes done from outside of Logger class
