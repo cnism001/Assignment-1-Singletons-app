@@ -44,6 +44,7 @@ namespace Assignment_1_Singletons_app
         public void TextLog(string message)
         {
             Logs.Add(message);
+            //will write received message
             Console.WriteLine(message);
         }
 
